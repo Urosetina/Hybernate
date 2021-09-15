@@ -1,11 +1,16 @@
 package model;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+import javax.persistence.OneToOne;
 
 
 @Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class Card {
 
 	@Id
@@ -13,6 +18,9 @@ public class Card {
 	private int idCard;
 	private String pan;
 	private String cardType;
+	
+	@OneToOne(cascade = CascadeType.PERSIST)
+	private Racun racun;
 	
 	
 	
@@ -33,6 +41,10 @@ public class Card {
 	}
 	public void setCardType(String cardType) {
 		this.cardType = cardType;
+	}
+	public void setRacun(Racun racun2) {
+		
+		
 	}
 	
 	

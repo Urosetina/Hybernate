@@ -31,5 +31,11 @@
 		<!-- Names the annotated entity class -->
 		<mapping class = "model.Card"/>
 		<mapping class = "model.User"/>
+		<mapping class = "mode.Racun"/>
+		<mapping class = "model.CreditCard"/>
+		<mapping class = "model.DebitCard"/>
+		<mapping class = "model.PremiumRacun"/>
+		<mapping class = "model.Banka"/>
+		<mapping class = "model.Ebanka"/>
 	</session-factory>
 </hibernate-configuration>

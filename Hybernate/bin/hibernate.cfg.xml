@@ -31,5 +31,6 @@
 		<!-- Names the annotated entity class -->
 		<mapping class = "model.Card"/>
 		<mapping class = "model.User"/>
+		<mapping class = "mode.Racun"/>
 	</session-factory>
 </hibernate-configuration>
